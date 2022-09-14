@@ -5,7 +5,7 @@
 #include <iostream>
 #include <string>
 
-const std::string bigList[] = {"aahed",
+const std::string wordleList[] = {"aahed",
 "aalii",
 "aapas",
 "aargh",

@@ -6,8 +6,6 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 global AUTHOR_NAME := "Taylor Hancock"
 global NUM_STARS := 50
 
-return
-
 ::.createNewCPP::
 Sleep, 50 ; wait for .createNewCPP to delete itself
 
@@ -45,7 +43,7 @@ createHeader(fileName) {
     Send, {Enter}* Author:    %AUTHOR_NAME% ; creates Author line
     Send, {Enter}* Purpose:{Space 3} ; creates Purpose line to fill
     Send, {Enter}* Version:   1.0 %CurrentTime% ; creates version 1.0 with current time
-    Send, {Enter}* Resources:{Space 3}{Enter} ; creates blank Resources line to be filled
+    Send, {Enter}* Resources:{Space}{Enter} ; creates blank Resources line to be filled
     Loop, %NUM_STARS% { ; prints NUM_STARS stars for the line edges
         Send, *
     }
