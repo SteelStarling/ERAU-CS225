@@ -3,8 +3,10 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
-USER_NAME = "Taylor Hancock"
-NUM_STARS = 20
+global AUTHOR_NAME := "Taylor Hancock"
+global NUM_STARS := 50
+
+return
 
 ::.createNewCPP::
 Sleep, 50 ; wait for .createNewCPP to delete itself
@@ -29,24 +31,24 @@ createNewFile(fileName) {
     Send, ^n ; creates new file
     Send, ^s ; saves new file
     WinWait, Save As ; wait until save window opens
-    Send, %fileName% ; prints fileName
-    Send, {Enter} ; saves
+    Send, %fileName%{Enter} ; prints fileName and saves
+    Sleep, 200 ; wait for stuff to work
 }
 
 createHeader(fileName) {
     FormatTime, CurrentTime,, MMM dd, yyyy
     Send, / ; sends slash to start comment
-    Loop %NUM_STARS% { ; prints NUM_STARS stars for the line edges
+    Loop, %NUM_STARS% { ; prints NUM_STARS stars for the line edges
         Send, *
     }
-    Send, {Enter} * File:    %fileName% ; creates File line
-    Send, {Enter} * Author:  %USER_NAME% ; creates Author line
-    Send, {Enter} * Purpose:{Space} ; creates Purpose line to fill
-    Send, {Enter} * Version: 1.0 %CurrentTime% ; creates version 1.0 with current time
-    Send, {Enter} * Resources:{Space}{Enter}{Space} ; creates blank Resources line to be filled
-    Loop %NUM_STARS% { ; prints NUM_STARS stars for the line edges
+    Send, {Enter}File:      %fileName% ; creates File line
+    Send, {Enter}* Author:    %AUTHOR_NAME% ; creates Author line
+    Send, {Enter}* Purpose:{Space 3} ; creates Purpose line to fill
+    Send, {Enter}* Version:   1.0 %CurrentTime% ; creates version 1.0 with current time
+    Send, {Enter}* Resources:{Space 3}{Enter} ; creates blank Resources line to be filled
+    Loop, %NUM_STARS% { ; prints NUM_STARS stars for the line edges
         Send, *
     }
-    Send, / ; sends slash to end comment
+    Send, /{Enter}{Enter}{BackSpace} ; sends slash to end comment
 }
 
