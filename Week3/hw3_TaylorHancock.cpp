@@ -12,7 +12,7 @@
 #include <string>
 #include <iostream>
 #include <random>
-#include <wordleList.hpp>
+#include "wordleList.hpp"
 using namespace std;
 
 const int WORD_COUNT = 6; // holds number of words
@@ -22,9 +22,12 @@ class Word {
     private:
         bool isValid; // determines if the string is a valid wordle string (length and dictionary match)
         std::string word; // contains the word itself
+        int colors[WORD_LENGTH]; //contains numbers corresponding to colors to print each letter in
     public:
         Word(std::string input); // constructor for word function
         Word(std::string input, std::string answer); // constructor for word function
+
+        void calcOccurrences(Word answer); // calculates if each letter is matching the provided answer
 
         bool getValid() {return isValid;} // isValid getter
         string getWord() {return word;} // word getter
@@ -45,7 +48,7 @@ class Board {
 };
 
 // function prototypes
-bool strExistsInList(string input, const string stringList[], int end, int start);
+bool strExistsInList(string input, const string stringList[], int end, int start = 0);
 int getRandInt(int start, int end);
 
 int main() {
@@ -68,7 +71,7 @@ Word::Word(std::string input) {
 Word::Word(std::string input, std::string answer) {
     word = input;
 
-    if(word.length() != 6) { // if wrong length, invalid, don't bother checking
+    if(word.length() != WORD_LENGTH + 1) { // if wrong length, invalid, don't bother checking
         isValid = false;
     } else if (word == answer) { // checks if it's the answer (possible speed up, unsure if it's actually effective in any way)
         isValid = true;
@@ -78,7 +81,7 @@ Word::Word(std::string input, std::string answer) {
 }
 
 // recursive binary search algorithm (position doesn't matter here, just has to exist)
-bool strExistsInList(string input, const string stringList[], int end, int start = 0) {
+bool strExistsInList(string input, const string stringList[], int end, int start) {
     if(end > start) { // if looped over everything (hasn't been found), return false
         return false;
     }
@@ -101,7 +104,7 @@ Board::Board() {
 }
 
 void Board::reset() {
-    answer = answerList[getRandInt(0, answerLength - 1)]; // get random answer and store it
+    answer = Word(answerList[getRandInt(0, answerLength - 1)]); // get random answer and store it as a word
     curWord = 0;
 }
 
