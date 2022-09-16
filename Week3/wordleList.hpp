@@ -2,8 +2,10 @@
  * This file literally just contains all the wordle words...I'd put them in the other one, but boy would that take up *so much* space
  *******/
 
+#ifndef WORDLELIST_HPP
+#define WORDLELIST_HPP
+
 #include <iostream>
-#include <string>
 
 const int answerLength = 2309;
 const std::string answerList[] = {"aback", // only contains answers (nobody is ever gonna guess "abask")
@@ -17172,3 +17174,5 @@ const std::string wordleList[] = {"aahed", // contains *ALL* valid words
 "zygon",
 "zymes",
 "zymic"};
+
+#endif // WORDLELIST_HPP
