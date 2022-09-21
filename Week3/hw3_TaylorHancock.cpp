@@ -7,6 +7,8 @@
  *              https://gist.github.com/cfreshman/d5fb56316158a1575898bba1eed3b5da and https://gist.github.com/cfreshman/a7b776506c73284511034e63af1017ee,
  *              as well as https://alphabetizer.flap.tv/ which helped me alphabetize the combined lists, as well as add quotes
  *              and commas for them all (I could've Regex'd it, but that would've required too much thinking :P).
+ *              Additional help with making the giant lists work came from Prof. Marriott, a great alternative to my previous
+ *              method involving a lot of banging my head against the wall.
  **************************************************/
 
 #include <string>
@@ -14,7 +16,9 @@
 #include <cstdlib>
 #include <vector>
 #include <time.h>
-//#include "wordleList.hpp" // this one is too large, so it refuses to run... :(
+#include <windows.h>
+#include <WinCon.h>
+//#include "wordleList.hpp" // this one is too large...if you're on a good computer, try uncommenting it and commenting out babyWordleList!
 #include "babyWordleList.hpp"
 using namespace std;
 
@@ -67,21 +71,24 @@ bool calcValid(string word);
 void printStars();
 
 int main() {
-    srand(time(NULL));
+    srand((unsigned int)time(NULL));
     Board wordleGame;
     wordleGame.playGame();
     return 0;
 }
 
+// creates a new board
 Board::Board() {
     reset();
 }
 
+// resets a board
 void Board::reset() {
     answer = Word(answerList[getRandInt(answerLength)]); // get random answer and store it as a word
     activeWordIndex = 0; // reset index
 }
 
+// runs the game
 void Board::playGame() {
     for(int i = 0; i < WORD_COUNT; i++) {
         string input;
@@ -113,6 +120,7 @@ void Board::playGame() {
     reset();
 }
 
+// Word object constructor
 Word::Word(string input) {
     word = input;
 
@@ -123,6 +131,7 @@ Word::Word(string input) {
     }
 }
 
+// Word object constructor
 Word::Word(string input, string answer) {
     word = input;
 
@@ -135,6 +144,7 @@ Word::Word(string input, string answer) {
     }
 }
 
+// checks which letters are correct
 void Word::calcOccurrences(Word answer) {
     string answerStr = answer.getWord(); // get string from answer
 
@@ -165,6 +175,7 @@ void Word::calcOccurrences(Word answer) {
     }
 }
 
+// prints an entire word in the right format
 void Word::printWord() {
     for(int i = 0; i < WORD_LENGTH; i++) { // print each letter
         printLetter(i);
@@ -172,18 +183,27 @@ void Word::printWord() {
     cout << endl; // print the newline
 }
 
+// prints a letter in the right format
 void Word::printLetter(int i) {
+    HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
     if(i < WORD_LENGTH && i >= 0) { // only print within range (should never be given weird values, but just to be sure)
         if(colors[i] == MATCH) { // print letter in correct style (called color for if I ever implement colors, as VS Code makes them...wonky)
-            cout << " (" << word.at(i) << ") ";
+            SetConsoleTextAttribute(hConsole, 10);
+            cout /*<< " _"*/ << word.at(i) /*<< "_ "*/;
+            SetConsoleTextAttribute(hConsole, 15);
         } else if(colors[i] == WRONG_LOCATION) {
-            cout << " _" << word.at(i) << "_ ";
+            SetConsoleTextAttribute(hConsole, 14);
+            cout /*<< " ("*/ << word.at(i) /*<< ") "*/;
+            SetConsoleTextAttribute(hConsole, 15);
         } else {
-            cout << " ___ ";
+            SetConsoleTextAttribute(hConsole, 8);
+            cout << /*" ___ "*/ word.at(i);
+            SetConsoleTextAttribute(hConsole, 15);
         }
     }
 }
 
+// checks if a string is a valid word
 bool calcValid(string word) {
     if(word.length() != WORD_LENGTH) { // if wrong length, invalid, don't bother checking
         return false;
@@ -216,6 +236,7 @@ int getRandInt(int max) {
     return rand() % max;
 }
 
+// just prints 40 stars
 void printStars() {
     cout << "****************************************" << endl;
 }
