@@ -12,6 +12,7 @@
         "xutility": "cpp",
         "xstring": "cpp",
         "random": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "ios": "cpp"
     }
 }
