@@ -113,11 +113,13 @@ void Car::drive() {
 }
 
 void Car::drive(int distance) {
-    if(distance < 0) { // if negative distance
-        cout << "You seriously expect to drive a negative distance? Please, input a positive distance to travel, we don't want to violate causality here." << endl;
-    } else if(distance == 0) { // if 0 distance
+    if(distance == 0) { // if 0 distance
         cout << "You...you want to drive no distance? Why...why did you even put that in? Do you want me to congratulate you? Wow, you've driven 0 miles! *sigh*" << endl;
-    } else { // if positive, print distance
+    } else { // if not zero, print distance
+        if(distance < 0) { // if negative distance
+            cout << "You seriously expect to drive a negative distance? I'm just gonna interpret that as a positive value." << endl;
+            distance *= -1; // flip sign of distance
+        }
         cout << "You drive " << distance << " miles." << endl;
         if(fuel == 0) { // if no fuel
             cout << "You have no gas, so you get out, and push your car to the destination. You are now very tired. Why on earth did you do that?" << endl;
