@@ -1,3 +1,10 @@
+/**************************************************
+ * Author: Taylor Hancock
+ * Purpose: Learn about class destructors and get more experience using classes
+ * Version: 1.0  09/21/2022
+ * Resources: N/A
+ **************************************************/
+
 #include <iostream>
 #include <string>
 #include <iomanip>
