@@ -40,25 +40,66 @@ IceCreamCone::IceCreamCone(string flav, int numScoops, string coneType, bool has
   }
 }
 
-void IceCreamCone::display(){ 
+void IceCreamCone::display() { 
   cout<<"Flavor: "<<flavor;
   cout<<" Number Scoops: "<<scoops;
   cout<<" Cone: "<<cone;
   //use std::fixed std::setprecision - to show 2 decimal places
+  cout<<" Has Sprinkles: ";
+  if(sprinkles) {
+    cout << "Yes";
+  } else {
+    cout << "No";
+  }
   cout<<" Price: $"<<fixed<<setprecision(2)<<price<<endl;
 }
 
 int main()
 {
+  // get flavor
   cout << "What flavor do you want? ";
   string flavor;
   getline(cin, flavor);
-  while(cin.)
+  while(!cin) {
+    cin.clear();
+    cin.ignore(INT_MAX, '\n');
+    cout << "ERROR: Invalid Input! Please input a valid string!" << endl << "What flavor do you want? ";
+    getline(cin, flavor);
+  }
 
-  IceCreamCone coneA;
-  IceCreamCone coneB("chocolate",2,"waffle");
-  IceCreamCone coneC("strawberry",4,"sugar");
+  // get scoops
+  cout << "How many scoops do you add? ";
+  int numScoops;
+  cin >> numScoops;
+  while(!cin || numScoops < 0) {
+    cin.clear();
+    cin.ignore(INT_MAX, '\n');
+    cout << "ERROR: Invalid Input! Please input a valid integer value greater than 0!" << endl << "How many scoops do you add? ";
+    cin >> numScoops;
+  }
+
+  // get cone type
+  cout << "What cone type do you want (waffle, sugar, cake)? ";
+  string coneType;
+  getline(cin, coneType);
+  while(!cin || (coneType != "waffle" && coneType != "sugar" && coneType != "cake")) {
+    cin.clear();
+    cin.ignore(INT_MAX, '\n');
+    cout << "ERROR: Invalid Input! Please input a valid string!" << endl << "What cone type do you want? ";
+    getline(cin, coneType);
+  }
+
+  // get sprinkles
+  cout << "Do you want sprinkles (1 = yes, 0 = no)? ";
+  int sprinkles;
+  cin >> sprinkles;
+  while(!cin || (sprinkles != 0 && sprinkles != 1)) {
+    cin.clear();
+    cin.ignore(INT_MAX, '\n');
+    cout << "ERROR: Invalid Input! Please input a valid integer in the range!" << endl << "Do you want sprinkles (1 = yes, 0 = no)? ";
+    cin >> sprinkles;
+  }
+
+  IceCreamCone coneA(flavor, numScoops, coneType, sprinkles);
   coneA.display();
-  coneB.display();
-  coneC.display();
 }
