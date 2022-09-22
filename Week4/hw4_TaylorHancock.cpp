@@ -60,7 +60,7 @@ int main() {
             c.drive(dist);
         } else if(userInput == 3) { // add fuel
             cout << "How much fuel do you add? ";
-            int fuelAmt;
+            double fuelAmt;
             cin >> fuelAmt;
             while(!cin) {
                 cin.clear();
@@ -96,12 +96,12 @@ void Car::fuelUp(double fuelAmount) {
         cout << "You fill your tank with " << fuelAmount << " gallons of fuel." << endl;
     }
     if(fuelAmount + fuel > fuelCapacity) { // too much fuel
-        fuel = fuelCapacity;
         cout << "Sadly, your tank does not have room, and you spill " << (fuelAmount + fuel) - fuelCapacity << " gallons of fuel on the ground." << endl
             << "This is a fire hazard, and you should probably do something about it, but sadly there is no option to in the menu, so you carry on." << endl;
+        fuel = fuelCapacity;
     } else if(fuelAmount + fuel < 0) { // if the amount drops the tank below 0 (for negatives "siphoning")
-        fuel = 0;
         cout << "You run out of fuel before you can siphon " << fuelAmount * -1 << " gallons out of your tank, but you now have zero gallons of fuel in your tank." << endl;
+        fuel = 0;
     } else { // reasonable amount of fuel
         fuel += fuelAmount;
         cout << "You now have " << fuel << " gallons of fuel." << endl;
