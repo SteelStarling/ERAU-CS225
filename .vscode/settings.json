@@ -16,6 +16,8 @@
         "ios": "cpp",
         "deque": "cpp",
         "unordered_map": "cpp",
-        "system_error": "cpp"
+        "system_error": "cpp",
+        "typeinfo": "cpp",
+        "new": "cpp"
     }
 }
