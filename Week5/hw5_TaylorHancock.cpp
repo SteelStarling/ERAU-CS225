@@ -32,6 +32,7 @@ void display(const Fraction& f);
 Fraction multiply(const Fraction& fraction1, const Fraction& fraction2);
 int getUserInt(string prompt);
 
+
 int main() {
     Fraction f1;
     Fraction f2;
@@ -46,6 +47,7 @@ int main() {
     cout << endl;
 }
 
+// reduces fraction fully
 void Fraction::reduce() {
     // if denominator is negative, make positive and make numerator negative
     if(denominator < 0) {
@@ -68,6 +70,7 @@ void Fraction::reduce() {
     }
 }
 
+// undoes fraction reduction (converts whole number portion into fraction)
 Fraction Fraction::unreduce() const {
     // add whole number * denominator to numerator
     if(numerator == 0) { // if numerator is 0, set denominator to 1
@@ -95,6 +98,7 @@ void display(const Fraction& f) {
     }
 }
 
+// multiplies two fractions and returns the result
 Fraction multiply(const Fraction& fraction1, const Fraction& fraction2) {
     // convert to unreduced values (makes math much easier)
     Fraction frac1Conv = fraction1.unreduce();
