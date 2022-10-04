@@ -68,7 +68,7 @@ void Fraction::reduce() {
             denominator /= i;
         }
     }
-}
+ }
 
 // undoes fraction reduction (converts whole number portion into fraction)
 Fraction Fraction::unreduce() const {
