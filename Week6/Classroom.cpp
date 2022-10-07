@@ -1,3 +1,11 @@
+/**************************************************
+ * File:      Classroom.cpp
+ * Author:    Taylor Hancock
+ * Purpose:   Practice working with inheritance
+ * Version:   1.0 Oct 05, 2022
+ * Resources: Lecture notes
+ **************************************************/
+
 #include <iostream>
 using namespace std;
 
@@ -10,11 +18,13 @@ class Classroom {
 		void display();
 };
 
+// creates a classroom
 Classroom::Classroom(string b, int num) {
 	building = b;
 	roomNum = num;
 }
 
+// displays classroom info
 void Classroom::display() {
 	cout << "Classroom: " << building << " " << roomNum << endl;
 }
@@ -29,12 +39,14 @@ class Instructor {
 		void display();
 };
 
+// creates an instructor
 Instructor::Instructor(string first, string last, int num) {
 	fname = first;
 	lname = last;
 	officeNum = num;
 }
 
+// displays values
 void Instructor::display() {
 	cout << "Instructor: " << fname << " " << lname << endl;
 	cout << "Office: " << officeNum << endl;
@@ -46,6 +58,7 @@ class CollegeCourse {
 		Classroom room;
 		int credits;
 	public:
+		// creates the whole thing, very very long
 		CollegeCourse(string instructorFirst, string instructorLast,
 					  int instructorOfficeNum, string buildingName,
 					  int roomNum, int credits) :
@@ -54,6 +67,7 @@ class CollegeCourse {
 					  room(buildingName, roomNum)
 					  { this->credits = credits; }
 
+		// display values
 		void display() {
 			instructor.display();
 			room.display();
@@ -66,5 +80,6 @@ int main() {
 	CollegeCourse cs225("Heather", "Marriott", 1729, "STEM Building", 124, 3);
 
 	cs125.display();
+	cout << "*******************************" << endl;
 	cs225.display();
 }
