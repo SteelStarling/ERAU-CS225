@@ -6,6 +6,8 @@
 #define PROJECTCHAONIA_COMMAND_H
 
 
+#include "Object.h"
+
 class Command {
 
 };

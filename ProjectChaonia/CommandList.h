@@ -5,8 +5,12 @@
 #ifndef PROJECTCHAONIA_COMMANDLIST_H
 #define PROJECTCHAONIA_COMMANDLIST_H
 
+#include <unordered_map>
+#include "Command.h"
 
+// each thing has a commandlist
 class CommandList {
+public:
 
 };
 

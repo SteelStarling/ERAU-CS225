@@ -6,7 +6,9 @@
 #define PROJECTCHAONIA_WEAPON_H
 
 
-class Weapon {
+#include "Item.h"
+
+class Weapon : public Item {
 
 };
 

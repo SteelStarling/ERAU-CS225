@@ -6,7 +6,9 @@
 #define PROJECTCHAONIA_ITEM_H
 
 
-class Item {
+#include "Object.h"
+
+class Item : public Object {
 
 };
 

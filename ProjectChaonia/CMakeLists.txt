@@ -3,4 +3,6 @@ project(ProjectChaonia)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(ProjectChaonia main.cpp)
+
+
+add_executable(ProjectChaonia main.cpp Character.cpp Character.h Interpreter.cpp Interpreter.h Map.cpp Map.h Object.cpp Object.h Room.cpp Room.h Item.cpp Item.h Weapon.cpp Weapon.h Command.cpp Command.h Player.cpp Player.h CommandList.cpp CommandList.h)

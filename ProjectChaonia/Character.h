@@ -6,7 +6,10 @@
 #define PROJECTCHAONIA_CHARACTER_H
 
 
-class Character {
+#include "Item.h"
+#include "Object.h"
+
+class Character : public Object {
 
 };
 

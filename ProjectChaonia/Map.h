@@ -5,6 +5,8 @@
 #ifndef PROJECTCHAONIA_MAP_H
 #define PROJECTCHAONIA_MAP_H
 
+#include <map>
+#include "Room.h"
 
 class Map {
 

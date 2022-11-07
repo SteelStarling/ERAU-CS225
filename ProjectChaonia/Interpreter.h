@@ -6,6 +6,8 @@
 #define PROJECTCHAONIA_INTERPRETER_H
 
 
+#include "Command.h"
+
 class Interpreter {
 
 };
