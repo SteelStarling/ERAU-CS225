@@ -6,7 +6,8 @@
 #define PROJECTCHAONIA_OBJECT_H
 
 #include <iostream>
-#include "CommandList.h"
+#include "Command.h"
+#include <unordered_map>
 using namespace std;
 
 class Object {
