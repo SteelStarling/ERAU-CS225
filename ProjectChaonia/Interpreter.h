@@ -7,6 +7,7 @@
 
 
 #include "Command.h"
+#include <iostream>
 
 class Interpreter {
 

@@ -7,9 +7,18 @@
 
 
 #include "Object.h"
+#include <iostream>
 
 class Item : public Object {
-
+    private:
+        std::string name;
+        std::string description;
+    public:
+        Item();
+        void setName(string name);
+        void setDescription(string description);
+        string getName();
+        string getDescription();
 };
 
 

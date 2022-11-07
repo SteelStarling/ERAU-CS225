@@ -26,6 +26,14 @@ public:
         UP = 9,
         DOWN = 10
     };
+
+    Room();
+
+    void setDirection(Room* adjacentRoom, Direction d);
+
+    Room* getDirection(Direction d);
+
+    void deleteDirection(Direction d);
 };
 
 
