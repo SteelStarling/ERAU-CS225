@@ -18,6 +18,20 @@ public:
         rooms.push_back(room);
         map[name] = room;
     }
+
+    /**
+     * Makes sure connections between rooms are properly built
+     * @return 0 if fully successful, otherwise a number corresponding to the number of bad connections if false
+     */
+    bool updateConnections() {
+        int numBad = 0;
+
+        for(Room& room : map) {
+            numBad += room.updateConnections();
+        }
+
+        return numBad;
+    }
 };
 
 

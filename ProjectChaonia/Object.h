@@ -35,6 +35,15 @@ public:
         this->commandList = new unordered_map<string, &Command>();
     }
 
+    string getName() { return name; }
+
+    string getDescription() { return description; }
+
+    unordered_map<string, &Command> getCommandList() { return commandList; }
+
+    Command& getCommand(string name) { return commandList[name]; }
+
+
 };
 
 

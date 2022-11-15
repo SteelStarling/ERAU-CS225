@@ -4,16 +4,13 @@
 
 #include "Connection.h"
 
-Connection::Connection(Room* roomTo) {
-    this->roomTo
+Connection::Connection(Room& roomTo, bool& openFlag) {
+    this->roomTo = roomTo;
+    this->roomToName = roomTo.getName();
 }
 
-Connection::Connection(Room* roomTo, bool* openFlag) {
-
-}
-
-Room* Connection::traverse();
+Room& Connection::traverse();
 
 bool Connection::getFlag();
 
-void Connection::setFlag(bool* openFlag);
+void Connection::setFlag(bool& openFlag);

@@ -11,21 +11,53 @@
 
 class Connection {
 private:
-    static Map* map; // holds the map, meaning you can see every room that exists and find the matching Room*
+    static Map& map; // holds the map, meaning you can see every room that exists and find the matching Room*
     string roomToName;
-    Room* roomToPtr;
-    bool* openFlag;
+    Room& roomToPtr;
+    bool& isOpen;
+    bool& isWall;
 public:
-    Connection(string* roomTo);
-    Connection(string* roomTo, bool* openFlag);
+    /**
+     * Creates a connection
+     * @param roomTo
+     * @param isOpen
+     */
+    Connection(string& roomTo, bool& isOpen = true);
 
-    Room* traverse();
+    /**
+     * Creates a closed connection
+     */
+    Connection();
 
+    /**
+     * Traverses through the connection, providing the room the connection links to
+     * @return Reference to the room the connection links to
+     */
+    Room& traverse();
 
+    /**
+     * Checks if the connection is open
+     * @return true if open, false if not
+     */
+    bool isOpen();
 
-    bool getFlag();
+    /**
+     * Sets the connection to be opened or closed, based on the provided flag pointer (meaning it can be modified elsewhere)
+     * @param isOpen
+     */
+    void setOpen(bool& isOpen);
 
-    void setFlag(bool* openFlag);
+    // TODO: Determine if using these makes sense, since most flags should be global to allow for multiple use? This could work if it means it affects both sides of the door too
+
+    /**
+     * Sets the connection to be opened
+     */
+    void setOpen();
+
+    /**
+     * Sets the connection to be closed
+     */
+    void setClosed();
 };
 
 

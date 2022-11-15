@@ -8,32 +8,67 @@
 
 #include <iostream>
 #include "Object.h"
+#include "Connection.h"
 
 class Room : public Object {
 private:
-    Room* adjacentRooms[10];
+    Connection adjacentRooms[10];
 public:
     enum Direction {
-        EMPTY = 0,
-        NORTH = 1,
-        NORTHEAST = 2,
-        EAST = 3,
-        SOUTHEAST = 4,
-        SOUTH = 5,
-        SOUTHWEST = 6,
-        WEST = 7,
-        NORTHWEST = 8,
-        UP = 9,
-        DOWN = 10
+        NORTH,
+        NORTHEAST,
+        EAST,
+        SOUTHEAST,
+        SOUTH,
+        SOUTHWEST,
+        WEST,
+        NORTHWEST,
+        UP,
+        DOWN
     };
 
     Room();
 
-    void setDirection(Room* adjacentRoom, Direction d);
+    /**
+     * Set connected room
+     * @param adjacentRoom the room to add to the connection
+     * @param d the direction to add the room to
+     * @param open if the connection is currently open
+     */
+    void setConnectedRoom(Room& adjacentRoom, Direction d, bool& open = true) {
+        Connection();
+    }
 
-    Room* getDirection(Direction d);
+    /**
+     * Sets the connection
+     * @param connection the connection to set
+     * @param d the direction of the connection to set
+     */
+    void setConnection(Connection& connection, Direction d);
 
-    void deleteDirection(Direction d);
+    int updateConnections() {
+        int numBad = 0;
+
+        for(Direction dir = NORTH; dir <= DOWN; dir++) {
+            numBad +=
+        }
+
+        return numBad;
+    }
+
+
+    /**
+     * Gets the room in the corresponding direction
+     * @param d Direction to delete connection in
+     * @return Reference to room the
+     */
+    Room& getConnectedRoom(Direction d);
+
+    /**
+     * Deletes the connection in the corresponding direction
+     * @param d Direction to delete connection in
+     */
+    void deleteConnection(Direction d);
 };
 
 
