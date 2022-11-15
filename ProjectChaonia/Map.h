@@ -14,6 +14,8 @@ private:
     static vector<Room> rooms; // holds every room
     static unordered_map<string, Room&> map; // helps find every room
 public:
+    const static Room emptyRoom(); // holds the core empty room (using null pointers leads to weird issues, so we just predefine an empty room)
+
     void addRoom(string name, Room& room) {
         rooms.push_back(room);
         map[name] = room;

@@ -8,8 +8,12 @@
 
 #include "Item.h"
 #include "Object.h"
+#include <vector>
 
 class Character : public Object {
+private:
+    vector<Object> inventory; // holds the user's inventory
+public:
 
 };
 

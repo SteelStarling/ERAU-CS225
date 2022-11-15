@@ -17,6 +17,12 @@ private:
     unordered_map<string, &Command> commandList;
 
 public:
+    /**
+     * Creates a new object with a given name, description, and list of commands
+     * @param name
+     * @param description
+     * @param commandList
+     */
     Object(string name, string description, unordered_map<string, &Command> commandList) {
         this->name = name;
         this->description = description;
@@ -38,6 +44,8 @@ public:
     string getName() { return name; }
 
     string getDescription() { return description; }
+
+    void addCommand(Command command, string name) { commandList[name] = command; }
 
     unordered_map<string, &Command> getCommandList() { return commandList; }
 

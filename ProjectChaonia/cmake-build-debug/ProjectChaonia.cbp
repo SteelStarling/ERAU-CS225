@@ -4,160 +4,154 @@
 	<Project>
 		<Option title="ProjectChaonia"/>
 		<Option makefile_is_custom="1"/>
-		<Option compiler="msvc8"/>
+		<Option compiler="gcc"/>
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/thanc/Documents/___DOCUMENTS/ERAU/CS225/CS225-Work/ProjectChaonia/cmake-build-debug"/>
+				<Option working_dir="D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\thanc\Documents\___DOCUMENTS\ERAU\CS225\CS225-Work\ProjectChaonia\cmake-build-debug\Makefile VERBOSE=1 all"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\thanc\Documents\___DOCUMENTS\ERAU\CS225\CS225-Work\ProjectChaonia\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\thanc\Documents\___DOCUMENTS\ERAU\CS225\CS225-Work\ProjectChaonia\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\thanc\Documents\___DOCUMENTS\ERAU\CS225\CS225-Work\ProjectChaonia\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ProjectChaonia">
-				<Option output="C:/Users/thanc/Documents/___DOCUMENTS/ERAU/CS225/CS225-Work/ProjectChaonia/cmake-build-debug/ProjectChaonia.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/thanc/Documents/___DOCUMENTS/ERAU/CS225/CS225-Work/ProjectChaonia/cmake-build-debug"/>
+				<Option output="D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/cmake-build-debug/ProjectChaonia.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
-				<Option compiler="msvc8"/>
+				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\ATLMFC\include"/>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\ucrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\shared"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\winrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\cppwinrt"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\thanc\Documents\___DOCUMENTS\ERAU\CS225\CS225-Work\ProjectChaonia\cmake-build-debug\Makefile VERBOSE=1 ProjectChaonia"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\thanc\Documents\___DOCUMENTS\ERAU\CS225\CS225-Work\ProjectChaonia\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\thanc\Documents\___DOCUMENTS\ERAU\CS225\CS225-Work\ProjectChaonia\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\thanc\Documents\___DOCUMENTS\ERAU\CS225\CS225-Work\ProjectChaonia\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/cmake-build-debug/Makefile&quot;  VERBOSE=1 ProjectChaonia"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ProjectChaonia/fast">
-				<Option output="C:/Users/thanc/Documents/___DOCUMENTS/ERAU/CS225/CS225-Work/ProjectChaonia/cmake-build-debug/ProjectChaonia.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/thanc/Documents/___DOCUMENTS/ERAU/CS225/CS225-Work/ProjectChaonia/cmake-build-debug"/>
+				<Option output="D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/cmake-build-debug/ProjectChaonia.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
-				<Option compiler="msvc8"/>
+				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\ATLMFC\include"/>
-					<Add directory="C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.22000.0\ucrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\shared"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\um"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\winrt"/>
-					<Add directory="C:\Program Files (x86)\Windows Kits\10\\include\10.0.22000.0\\cppwinrt"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.1.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\thanc\Documents\___DOCUMENTS\ERAU\CS225\CS225-Work\ProjectChaonia\cmake-build-debug\Makefile VERBOSE=1 ProjectChaonia/fast"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\thanc\Documents\___DOCUMENTS\ERAU\CS225\CS225-Work\ProjectChaonia\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\thanc\Documents\___DOCUMENTS\ERAU\CS225\CS225-Work\ProjectChaonia\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\thanc\Documents\___DOCUMENTS\ERAU\CS225\CS225-Work\ProjectChaonia\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/cmake-build-debug/Makefile&quot;  VERBOSE=1 ProjectChaonia/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="C:/Users/thanc/Documents/___DOCUMENTS/ERAU/CS225/CS225-Work/ProjectChaonia/cmake-build-debug"/>
+				<Option working_dir="D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\thanc\Documents\___DOCUMENTS\ERAU\CS225\CS225-Work\ProjectChaonia\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\thanc\Documents\___DOCUMENTS\ERAU\CS225\CS225-Work\ProjectChaonia\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\thanc\Documents\___DOCUMENTS\ERAU\CS225\CS225-Work\ProjectChaonia\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\thanc\Documents\___DOCUMENTS\ERAU\CS225\CS225-Work\ProjectChaonia\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/thanc/Documents/___DOCUMENTS/ERAU/CS225/CS225-Work/ProjectChaonia/cmake-build-debug"/>
+				<Option working_dir="D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="nmake /NOLOGO /f C:\Users\thanc\Documents\___DOCUMENTS\ERAU\CS225\CS225-Work\ProjectChaonia\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="nmake /NOLOGO /f C:\Users\thanc\Documents\___DOCUMENTS\ERAU\CS225\CS225-Work\ProjectChaonia\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="nmake /NOLOGO /f C:\Users\thanc\Documents\___DOCUMENTS\ERAU\CS225\CS225-Work\ProjectChaonia\cmake-build-debug\Makefile VERBOSE=1 clean"/>
-					<DistClean command="nmake /NOLOGO /f C:\Users\thanc\Documents\___DOCUMENTS\ERAU\CS225\CS225-Work\ProjectChaonia\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/thanc/Documents/___DOCUMENTS/ERAU/CS225/CS225-Work/ProjectChaonia/Character.cpp">
+		<Unit filename="D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/Character.cpp">
 			<Option target="ProjectChaonia"/>
 		</Unit>
-		<Unit filename="C:/Users/thanc/Documents/___DOCUMENTS/ERAU/CS225/CS225-Work/ProjectChaonia/Character.h">
+		<Unit filename="D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/Character.h">
 			<Option target="ProjectChaonia"/>
 		</Unit>
-		<Unit filename="C:/Users/thanc/Documents/___DOCUMENTS/ERAU/CS225/CS225-Work/ProjectChaonia/Command.cpp">
+		<Unit filename="D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/Command.cpp">
 			<Option target="ProjectChaonia"/>
 		</Unit>
-		<Unit filename="C:/Users/thanc/Documents/___DOCUMENTS/ERAU/CS225/CS225-Work/ProjectChaonia/Command.h">
+		<Unit filename="D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/Command.h">
 			<Option target="ProjectChaonia"/>
 		</Unit>
-		<Unit filename="C:/Users/thanc/Documents/___DOCUMENTS/ERAU/CS225/CS225-Work/ProjectChaonia/CommandList.cpp">
+		<Unit filename="D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/Connection.cpp">
 			<Option target="ProjectChaonia"/>
 		</Unit>
-		<Unit filename="C:/Users/thanc/Documents/___DOCUMENTS/ERAU/CS225/CS225-Work/ProjectChaonia/CommandList.h">
+		<Unit filename="D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/Connection.h">
 			<Option target="ProjectChaonia"/>
 		</Unit>
-		<Unit filename="C:/Users/thanc/Documents/___DOCUMENTS/ERAU/CS225/CS225-Work/ProjectChaonia/Connection.cpp">
+		<Unit filename="D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/Game.cpp">
 			<Option target="ProjectChaonia"/>
 		</Unit>
-		<Unit filename="C:/Users/thanc/Documents/___DOCUMENTS/ERAU/CS225/CS225-Work/ProjectChaonia/Connection.h">
+		<Unit filename="D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/Game.h">
 			<Option target="ProjectChaonia"/>
 		</Unit>
-		<Unit filename="C:/Users/thanc/Documents/___DOCUMENTS/ERAU/CS225/CS225-Work/ProjectChaonia/Game.cpp">
+		<Unit filename="D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/Interpreter.cpp">
 			<Option target="ProjectChaonia"/>
 		</Unit>
-		<Unit filename="C:/Users/thanc/Documents/___DOCUMENTS/ERAU/CS225/CS225-Work/ProjectChaonia/Game.h">
+		<Unit filename="D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/Interpreter.h">
 			<Option target="ProjectChaonia"/>
 		</Unit>
-		<Unit filename="C:/Users/thanc/Documents/___DOCUMENTS/ERAU/CS225/CS225-Work/ProjectChaonia/Interpreter.cpp">
+		<Unit filename="D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/Item.cpp">
 			<Option target="ProjectChaonia"/>
 		</Unit>
-		<Unit filename="C:/Users/thanc/Documents/___DOCUMENTS/ERAU/CS225/CS225-Work/ProjectChaonia/Interpreter.h">
+		<Unit filename="D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/Item.h">
 			<Option target="ProjectChaonia"/>
 		</Unit>
-		<Unit filename="C:/Users/thanc/Documents/___DOCUMENTS/ERAU/CS225/CS225-Work/ProjectChaonia/Item.cpp">
+		<Unit filename="D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/Map.cpp">
 			<Option target="ProjectChaonia"/>
 		</Unit>
-		<Unit filename="C:/Users/thanc/Documents/___DOCUMENTS/ERAU/CS225/CS225-Work/ProjectChaonia/Item.h">
+		<Unit filename="D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/Map.h">
 			<Option target="ProjectChaonia"/>
 		</Unit>
-		<Unit filename="C:/Users/thanc/Documents/___DOCUMENTS/ERAU/CS225/CS225-Work/ProjectChaonia/Map.cpp">
+		<Unit filename="D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/Object.cpp">
 			<Option target="ProjectChaonia"/>
 		</Unit>
-		<Unit filename="C:/Users/thanc/Documents/___DOCUMENTS/ERAU/CS225/CS225-Work/ProjectChaonia/Map.h">
+		<Unit filename="D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/Object.h">
 			<Option target="ProjectChaonia"/>
 		</Unit>
-		<Unit filename="C:/Users/thanc/Documents/___DOCUMENTS/ERAU/CS225/CS225-Work/ProjectChaonia/Object.cpp">
+		<Unit filename="D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/Player.cpp">
 			<Option target="ProjectChaonia"/>
 		</Unit>
-		<Unit filename="C:/Users/thanc/Documents/___DOCUMENTS/ERAU/CS225/CS225-Work/ProjectChaonia/Object.h">
+		<Unit filename="D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/Player.h">
 			<Option target="ProjectChaonia"/>
 		</Unit>
-		<Unit filename="C:/Users/thanc/Documents/___DOCUMENTS/ERAU/CS225/CS225-Work/ProjectChaonia/Player.cpp">
+		<Unit filename="D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/Room.cpp">
 			<Option target="ProjectChaonia"/>
 		</Unit>
-		<Unit filename="C:/Users/thanc/Documents/___DOCUMENTS/ERAU/CS225/CS225-Work/ProjectChaonia/Player.h">
+		<Unit filename="D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/Room.h">
 			<Option target="ProjectChaonia"/>
 		</Unit>
-		<Unit filename="C:/Users/thanc/Documents/___DOCUMENTS/ERAU/CS225/CS225-Work/ProjectChaonia/Room.cpp">
+		<Unit filename="D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/Weapon.cpp">
 			<Option target="ProjectChaonia"/>
 		</Unit>
-		<Unit filename="C:/Users/thanc/Documents/___DOCUMENTS/ERAU/CS225/CS225-Work/ProjectChaonia/Room.h">
+		<Unit filename="D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/Weapon.h">
 			<Option target="ProjectChaonia"/>
 		</Unit>
-		<Unit filename="C:/Users/thanc/Documents/___DOCUMENTS/ERAU/CS225/CS225-Work/ProjectChaonia/Weapon.cpp">
+		<Unit filename="D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/main.cpp">
 			<Option target="ProjectChaonia"/>
 		</Unit>
-		<Unit filename="C:/Users/thanc/Documents/___DOCUMENTS/ERAU/CS225/CS225-Work/ProjectChaonia/Weapon.h">
-			<Option target="ProjectChaonia"/>
-		</Unit>
-		<Unit filename="C:/Users/thanc/Documents/___DOCUMENTS/ERAU/CS225/CS225-Work/ProjectChaonia/main.cpp">
-			<Option target="ProjectChaonia"/>
-		</Unit>
-		<Unit filename="C:/Users/thanc/Documents/___DOCUMENTS/ERAU/CS225/CS225-Work/ProjectChaonia/CMakeLists.txt">
+		<Unit filename="D:/ERAU/Sophomore Year/CS225/CS225-Work/ProjectChaonia/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

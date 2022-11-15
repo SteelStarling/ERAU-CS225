@@ -27,7 +27,13 @@ public:
         DOWN
     };
 
-    Room();
+    Room(string name, string desc) {
+
+    }
+
+    Room(string name) {
+
+    }
 
     /**
      * Set connected room
@@ -36,7 +42,7 @@ public:
      * @param open if the connection is currently open
      */
     void setConnectedRoom(Room& adjacentRoom, Direction d, bool& open = true) {
-        Connection();
+
     }
 
     /**
@@ -44,13 +50,17 @@ public:
      * @param connection the connection to set
      * @param d the direction of the connection to set
      */
-    void setConnection(Connection& connection, Direction d);
+    void setConnection(Connection& connection, Direction d) {
+        adjacentRooms[d] = connection;
+    }
 
     int updateConnections() {
         int numBad = 0;
 
         for(Direction dir = NORTH; dir <= DOWN; dir++) {
-            numBad +=
+            if(!adjacentRoom[dir].isWall() && adjacentRoom[dir].) { // only worry about invalid passages, walls are fine (should never be traversed)
+                numBad +=
+            }
         }
 
         return numBad;
