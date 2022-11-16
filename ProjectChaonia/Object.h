@@ -6,8 +6,8 @@
 #define PROJECTCHAONIA_OBJECT_H
 
 #include <iostream>
-#include "Command.h"
 #include <unordered_map>
+#include "Command.h"
 using namespace std;
 
 class Object {
@@ -19,8 +19,8 @@ private:
 public:
     /**
      * Creates a new object with a given name, description, and list of commands
-     * @param name
-     * @param description
+     * @param name the name of the object
+     * @param description the description of the object
      * @param commandList
      */
     Object(string name, string description, unordered_map<string, &Command> commandList) {
@@ -29,27 +29,47 @@ public:
         this->commandList = commandList;
     }
 
+    /**
+     * Creates a new object with a given name and description
+     * @param name the name of the object
+     * @param description the description of the object
+     */
     Object(string name, string description) {
         this->name = name;
         this->description = description;
-        this->commandList = new unordered_map<string, &Command>();
     }
 
+    /**
+     * Creates a new object with a given name, and the default description for something unremarkable
+     * @param name the name of the object
+     */
     Object(string name) {
         this->name = name;
-        this->description = "Just a perfectly normal " + name + "\n";
-        this->commandList = new unordered_map<string, &Command>();
+        this->description = "Just a perfectly normal " + name + ", it is completely unremarkable.\n";
     }
 
-    string getName() { return name; }
+    /**
+     * Gets the name of the object
+     * @return the name of the object
+     */
+    string getName() const { return name; }
 
-    string getDescription() { return description; }
+    /**
+     * Gets the description of the object
+     * @return the description of the object
+     */
+    string getDescription() const { return description; }
 
+    /**
+     *
+     * @param command
+     * @param name
+     */
     void addCommand(Command command, string name) { commandList[name] = command; }
 
     unordered_map<string, &Command> getCommandList() { return commandList; }
 
-    Command& getCommand(string name) { return commandList[name]; }
+    Command& getCommand(string name) const { return commandList[name]; }
 
 
 };

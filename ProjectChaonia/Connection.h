@@ -9,47 +9,37 @@
 #include "Room.h"
 #include "Map.h"
 
+
 class Connection {
 private:
     static Map& map; // holds the map, meaning you can see every room that exists and find the matching Room*
     string roomToName;
-    Room* roomToPtr;
-    bool connected; // states if the connection has been completed
     bool& isOpen;
-    bool& isWall;
+    bool isWall; // says if the connection is an unopenable wall (isOpen does not matter)
 public:
     /**
      * Creates a connection with a custom open parameter
      * @param roomTo the name of the room to connect to
      * @param isOpen if the room is open
      */
-    Connection(string& roomTo, bool& isOpen) {
-
-    }
+    Connection(string& roomTo, bool& isOpen) { this->isWall = false; this->isOpen = isOpen; this->roomToName = roomTo; }
 
     /**
      * Creates an open connection
      * @param roomTo the name of the room to connect to
      */
-    Connection(string& roomTo) {
-        this->isWall = false;
-        this->isOpen = true;
-
-        this->connected = false;
-
-        this->roomToName = roomTo;
-    }
+    Connection(string& roomTo) { this->isWall = false; this->isOpen = true; this->roomToName = roomTo; }
 
     /**
      * Creates a closed connection (room (which does not exist) will be called "NULL")
      */
-    Connection() { isWall = true; isOpen = false; roomToPtr = NULL; roomToName = "NULL"; connected = true; }
+    Connection() { isWall = true; isOpen = false; roomToName = "NULL"; }
 
     /**
-     * Traverses through the connection, providing the room the connection links to
-     * @return Reference to the room the connection links to
+     * Traverses through the connection, providing the name of the room the connection links to
+     * @return Name of the room the connection links to
      */
-    Room& traverse();
+    string traverse() { return roomToName; }
 
     /**
      * Checks if the connection is open
@@ -68,8 +58,6 @@ public:
      * @param isOpen
      */
     void setOpen(bool& isOpen) { this->isOpen = isOpen; }
-
-    // TODO: Determine if using these makes sense, since most flags should be global to allow for multiple use? This could work if it means it affects both sides of the door too
 
     /**
      * Sets the connection to be opened

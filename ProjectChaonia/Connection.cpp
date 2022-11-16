@@ -3,11 +3,3 @@
 //
 
 #include "Connection.h"
-
-Room& Connection::traverse() {
-    if(roomToPtr != NULL) {
-
-    } else {
-        return map.emptyRoom();
-    }
-}

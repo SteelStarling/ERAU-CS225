@@ -12,6 +12,7 @@
 
 class Room : public Object {
 private:
+    static Connection wallConnection = new Connection(); // set a static wall connection to prevent memory hogging
     Connection adjacentRooms[10];
 public:
     enum Direction {
@@ -27,12 +28,22 @@ public:
         DOWN
     };
 
-    Room(string name, string desc) {
-
+    /**
+     * Creates a new Room, with the given name and description, and all directions blocked off
+     * @param name the name of the room
+     * @param desc the room's description
+     */
+    Room(string name, string desc) : Object(name, desc) {
+        for(Direction dir = NORTH; dir <= DOWN; dir++) { // default to all rooms being a wall
+            adjacentRooms[dir] = wallConnection;
+        }
     }
 
-    Room(string name) {
 
+    Room(string name) : Object(name) {
+        for(Direction dir = NORTH; dir <= DOWN; dir++) { // default to all rooms being a wall
+            adjacentRooms[dir] = wallConnection;
+        }
     }
 
     /**
@@ -41,7 +52,7 @@ public:
      * @param d the direction to add the room to
      * @param open if the connection is currently open
      */
-    void setConnectedRoom(Room& adjacentRoom, Direction d, bool& open = true) {
+    void setConnectedRoom(string adjacentRoom, Direction d, bool& open = true) : adjacentRooms[d]() {
 
     }
 
@@ -54,31 +65,18 @@ public:
         adjacentRooms[d] = connection;
     }
 
-    int updateConnections() {
-        int numBad = 0;
-
-        for(Direction dir = NORTH; dir <= DOWN; dir++) {
-            if(!adjacentRoom[dir].isWall() && adjacentRoom[dir].) { // only worry about invalid passages, walls are fine (should never be traversed)
-                numBad +=
-            }
-        }
-
-        return numBad;
-    }
-
-
     /**
      * Gets the room in the corresponding direction
      * @param d Direction to delete connection in
      * @return Reference to room the
      */
-    Room& getConnectedRoom(Direction d);
+    Room& getConnectedRoom(Direction d) const {}
 
     /**
      * Deletes the connection in the corresponding direction
      * @param d Direction to delete connection in
      */
-    void deleteConnection(Direction d);
+    void deleteConnection(Direction d) {}
 };
 
 

@@ -7,11 +7,13 @@
 
 
 #include "Map.h"
+#include "Player.h"
 
 class Game {
 private:
     Map map;
-
+    Player p;
+    int turns;
 public:
 };
 

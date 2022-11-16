@@ -6,9 +6,9 @@
 #define PROJECTCHAONIA_CHARACTER_H
 
 
+#include <vector>
 #include "Item.h"
 #include "Object.h"
-#include <vector>
 
 class Character : public Object {
 private:
