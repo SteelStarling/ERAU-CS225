@@ -12,7 +12,7 @@
 
 class Room : public Object {
 private:
-    static Connection wallConnection = new Connection(); // set a static wall connection to prevent memory hogging
+    static Connection wallConnection = new Connection(); // set a static wall connection to prevent *too much* memory hogging
     Connection adjacentRooms[10];
 public:
     enum Direction {
@@ -39,7 +39,10 @@ public:
         }
     }
 
-
+    /**
+     * Creates a new room, with the given name and default description, and all directions blocked off
+     * @param name
+     */
     Room(string name) : Object(name) {
         for(Direction dir = NORTH; dir <= DOWN; dir++) { // default to all rooms being a wall
             adjacentRooms[dir] = wallConnection;
@@ -52,8 +55,8 @@ public:
      * @param d the direction to add the room to
      * @param open if the connection is currently open
      */
-    void setConnectedRoom(string adjacentRoom, Direction d, bool& open = true) : adjacentRooms[d]() {
-
+    void setConnectedRoom(Room& adjacentRoom, Direction d, bool& open = true) {
+        Connection c(adjacentRoom
     }
 
     /**
@@ -61,9 +64,7 @@ public:
      * @param connection the connection to set
      * @param d the direction of the connection to set
      */
-    void setConnection(Connection& connection, Direction d) {
-        adjacentRooms[d] = connection;
-    }
+    void setConnection(Connection& connection, Direction d) { adjacentRooms[d] = connection; }
 
     /**
      * Gets the room in the corresponding direction
