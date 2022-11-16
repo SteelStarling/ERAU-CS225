@@ -11,8 +11,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/ProjectChaonia.dir/Interpreter.cpp.obj.d"
   "CMakeFiles/ProjectChaonia.dir/Item.cpp.obj"
   "CMakeFiles/ProjectChaonia.dir/Item.cpp.obj.d"
-  "CMakeFiles/ProjectChaonia.dir/Map.cpp.obj"
-  "CMakeFiles/ProjectChaonia.dir/Map.cpp.obj.d"
   "CMakeFiles/ProjectChaonia.dir/Object.cpp.obj"
   "CMakeFiles/ProjectChaonia.dir/Object.cpp.obj.d"
   "CMakeFiles/ProjectChaonia.dir/Player.cpp.obj"

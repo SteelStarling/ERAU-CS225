@@ -6,12 +6,13 @@
 #define PROJECTCHAONIA_GAME_H
 
 
-#include "Map.h"
+#include <unordered_map>
+#include "Room.h"
 #include "Player.h"
 
 class Game {
 private:
-    Map map;
+    unordered_map<string, *Room> map;
     Player p;
     int turns;
 public:

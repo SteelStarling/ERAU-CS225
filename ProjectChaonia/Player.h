@@ -9,21 +9,20 @@
 #include <iostream>
 #include "Character.h"
 #include "Room.h"
-#include "Map.h"
 
 
 class Player : public Character {
 private:
-    Room& location;
+    Room* location;
     int points;
     int health;
 public:
-    Room& getLocation() const {
+    Room* getLocation() const {
         return location;
     }
 
-    void setLocation(Room& location) {
-        Player::location = location;
+    void setLocation(Room* location) {
+        this->location = location;
     }
 
     int getPoints() const {
@@ -31,7 +30,7 @@ public:
     }
 
     void setPoints(int points) {
-        Player::points = points;
+        this->points = points;
     }
 
     int getHealth() const {
@@ -39,7 +38,7 @@ public:
     }
 
     void setHealth(int health) {
-        Player::health = health;
+        this->health = health;
     }
 };
 

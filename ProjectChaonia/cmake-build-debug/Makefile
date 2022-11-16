@@ -272,30 +272,6 @@ Item.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjectChaonia.dir\build.make CMakeFiles/ProjectChaonia.dir/Item.cpp.s
 .PHONY : Item.cpp.s
 
-Map.obj: Map.cpp.obj
-.PHONY : Map.obj
-
-# target to build an object file
-Map.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjectChaonia.dir\build.make CMakeFiles/ProjectChaonia.dir/Map.cpp.obj
-.PHONY : Map.cpp.obj
-
-Map.i: Map.cpp.i
-.PHONY : Map.i
-
-# target to preprocess a source file
-Map.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjectChaonia.dir\build.make CMakeFiles/ProjectChaonia.dir/Map.cpp.i
-.PHONY : Map.cpp.i
-
-Map.s: Map.cpp.s
-.PHONY : Map.s
-
-# target to generate assembly for a file
-Map.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ProjectChaonia.dir\build.make CMakeFiles/ProjectChaonia.dir/Map.cpp.s
-.PHONY : Map.cpp.s
-
 Object.obj: Object.cpp.obj
 .PHONY : Object.obj
 
@@ -443,9 +419,6 @@ help:
 	@echo ... Item.obj
 	@echo ... Item.i
 	@echo ... Item.s
-	@echo ... Map.obj
-	@echo ... Map.i
-	@echo ... Map.s
 	@echo ... Object.obj
 	@echo ... Object.i
 	@echo ... Object.s

@@ -6,7 +6,7 @@
 #include "Room.h"
 
 void Room::setDirection(Room* adjacentRoom, Direction d) {
-    adjacentRooms[d] = adjacentRoom;
+    adjacentRooms[d] = new Connection(adjacentRoom);
 }
 
 Room* Room::getDirection(Direction d) {

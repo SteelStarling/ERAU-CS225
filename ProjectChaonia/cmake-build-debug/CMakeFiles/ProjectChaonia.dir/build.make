@@ -110,24 +110,10 @@ CMakeFiles/ProjectChaonia.dir/Interpreter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectChaonia.dir/Interpreter.cpp.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\ERAU\Sophomore Year\CS225\CS225-Work\ProjectChaonia\Interpreter.cpp" -o CMakeFiles\ProjectChaonia.dir\Interpreter.cpp.s
 
-CMakeFiles/ProjectChaonia.dir/Map.cpp.obj: CMakeFiles/ProjectChaonia.dir/flags.make
-CMakeFiles/ProjectChaonia.dir/Map.cpp.obj: ../Map.cpp
-CMakeFiles/ProjectChaonia.dir/Map.cpp.obj: CMakeFiles/ProjectChaonia.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\ERAU\Sophomore Year\CS225\CS225-Work\ProjectChaonia\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ProjectChaonia.dir/Map.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjectChaonia.dir/Map.cpp.obj -MF CMakeFiles\ProjectChaonia.dir\Map.cpp.obj.d -o CMakeFiles\ProjectChaonia.dir\Map.cpp.obj -c "D:\ERAU\Sophomore Year\CS225\CS225-Work\ProjectChaonia\Map.cpp"
-
-CMakeFiles/ProjectChaonia.dir/Map.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ProjectChaonia.dir/Map.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "D:\ERAU\Sophomore Year\CS225\CS225-Work\ProjectChaonia\Map.cpp" > CMakeFiles\ProjectChaonia.dir\Map.cpp.i
-
-CMakeFiles/ProjectChaonia.dir/Map.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ProjectChaonia.dir/Map.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "D:\ERAU\Sophomore Year\CS225\CS225-Work\ProjectChaonia\Map.cpp" -o CMakeFiles\ProjectChaonia.dir\Map.cpp.s
-
 CMakeFiles/ProjectChaonia.dir/Object.cpp.obj: CMakeFiles/ProjectChaonia.dir/flags.make
 CMakeFiles/ProjectChaonia.dir/Object.cpp.obj: ../Object.cpp
 CMakeFiles/ProjectChaonia.dir/Object.cpp.obj: CMakeFiles/ProjectChaonia.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\ERAU\Sophomore Year\CS225\CS225-Work\ProjectChaonia\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ProjectChaonia.dir/Object.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\ERAU\Sophomore Year\CS225\CS225-Work\ProjectChaonia\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ProjectChaonia.dir/Object.cpp.obj"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjectChaonia.dir/Object.cpp.obj -MF CMakeFiles\ProjectChaonia.dir\Object.cpp.obj.d -o CMakeFiles\ProjectChaonia.dir\Object.cpp.obj -c "D:\ERAU\Sophomore Year\CS225\CS225-Work\ProjectChaonia\Object.cpp"
 
 CMakeFiles/ProjectChaonia.dir/Object.cpp.i: cmake_force
@@ -141,7 +127,7 @@ CMakeFiles/ProjectChaonia.dir/Object.cpp.s: cmake_force
 CMakeFiles/ProjectChaonia.dir/Room.cpp.obj: CMakeFiles/ProjectChaonia.dir/flags.make
 CMakeFiles/ProjectChaonia.dir/Room.cpp.obj: ../Room.cpp
 CMakeFiles/ProjectChaonia.dir/Room.cpp.obj: CMakeFiles/ProjectChaonia.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\ERAU\Sophomore Year\CS225\CS225-Work\ProjectChaonia\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ProjectChaonia.dir/Room.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\ERAU\Sophomore Year\CS225\CS225-Work\ProjectChaonia\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ProjectChaonia.dir/Room.cpp.obj"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjectChaonia.dir/Room.cpp.obj -MF CMakeFiles\ProjectChaonia.dir\Room.cpp.obj.d -o CMakeFiles\ProjectChaonia.dir\Room.cpp.obj -c "D:\ERAU\Sophomore Year\CS225\CS225-Work\ProjectChaonia\Room.cpp"
 
 CMakeFiles/ProjectChaonia.dir/Room.cpp.i: cmake_force
@@ -155,7 +141,7 @@ CMakeFiles/ProjectChaonia.dir/Room.cpp.s: cmake_force
 CMakeFiles/ProjectChaonia.dir/Item.cpp.obj: CMakeFiles/ProjectChaonia.dir/flags.make
 CMakeFiles/ProjectChaonia.dir/Item.cpp.obj: ../Item.cpp
 CMakeFiles/ProjectChaonia.dir/Item.cpp.obj: CMakeFiles/ProjectChaonia.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\ERAU\Sophomore Year\CS225\CS225-Work\ProjectChaonia\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ProjectChaonia.dir/Item.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\ERAU\Sophomore Year\CS225\CS225-Work\ProjectChaonia\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ProjectChaonia.dir/Item.cpp.obj"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjectChaonia.dir/Item.cpp.obj -MF CMakeFiles\ProjectChaonia.dir\Item.cpp.obj.d -o CMakeFiles\ProjectChaonia.dir\Item.cpp.obj -c "D:\ERAU\Sophomore Year\CS225\CS225-Work\ProjectChaonia\Item.cpp"
 
 CMakeFiles/ProjectChaonia.dir/Item.cpp.i: cmake_force
@@ -169,7 +155,7 @@ CMakeFiles/ProjectChaonia.dir/Item.cpp.s: cmake_force
 CMakeFiles/ProjectChaonia.dir/Weapon.cpp.obj: CMakeFiles/ProjectChaonia.dir/flags.make
 CMakeFiles/ProjectChaonia.dir/Weapon.cpp.obj: ../Weapon.cpp
 CMakeFiles/ProjectChaonia.dir/Weapon.cpp.obj: CMakeFiles/ProjectChaonia.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\ERAU\Sophomore Year\CS225\CS225-Work\ProjectChaonia\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ProjectChaonia.dir/Weapon.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\ERAU\Sophomore Year\CS225\CS225-Work\ProjectChaonia\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ProjectChaonia.dir/Weapon.cpp.obj"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjectChaonia.dir/Weapon.cpp.obj -MF CMakeFiles\ProjectChaonia.dir\Weapon.cpp.obj.d -o CMakeFiles\ProjectChaonia.dir\Weapon.cpp.obj -c "D:\ERAU\Sophomore Year\CS225\CS225-Work\ProjectChaonia\Weapon.cpp"
 
 CMakeFiles/ProjectChaonia.dir/Weapon.cpp.i: cmake_force
@@ -183,7 +169,7 @@ CMakeFiles/ProjectChaonia.dir/Weapon.cpp.s: cmake_force
 CMakeFiles/ProjectChaonia.dir/Command.cpp.obj: CMakeFiles/ProjectChaonia.dir/flags.make
 CMakeFiles/ProjectChaonia.dir/Command.cpp.obj: ../Command.cpp
 CMakeFiles/ProjectChaonia.dir/Command.cpp.obj: CMakeFiles/ProjectChaonia.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\ERAU\Sophomore Year\CS225\CS225-Work\ProjectChaonia\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ProjectChaonia.dir/Command.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\ERAU\Sophomore Year\CS225\CS225-Work\ProjectChaonia\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ProjectChaonia.dir/Command.cpp.obj"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjectChaonia.dir/Command.cpp.obj -MF CMakeFiles\ProjectChaonia.dir\Command.cpp.obj.d -o CMakeFiles\ProjectChaonia.dir\Command.cpp.obj -c "D:\ERAU\Sophomore Year\CS225\CS225-Work\ProjectChaonia\Command.cpp"
 
 CMakeFiles/ProjectChaonia.dir/Command.cpp.i: cmake_force
@@ -197,7 +183,7 @@ CMakeFiles/ProjectChaonia.dir/Command.cpp.s: cmake_force
 CMakeFiles/ProjectChaonia.dir/Player.cpp.obj: CMakeFiles/ProjectChaonia.dir/flags.make
 CMakeFiles/ProjectChaonia.dir/Player.cpp.obj: ../Player.cpp
 CMakeFiles/ProjectChaonia.dir/Player.cpp.obj: CMakeFiles/ProjectChaonia.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\ERAU\Sophomore Year\CS225\CS225-Work\ProjectChaonia\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ProjectChaonia.dir/Player.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\ERAU\Sophomore Year\CS225\CS225-Work\ProjectChaonia\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ProjectChaonia.dir/Player.cpp.obj"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjectChaonia.dir/Player.cpp.obj -MF CMakeFiles\ProjectChaonia.dir\Player.cpp.obj.d -o CMakeFiles\ProjectChaonia.dir\Player.cpp.obj -c "D:\ERAU\Sophomore Year\CS225\CS225-Work\ProjectChaonia\Player.cpp"
 
 CMakeFiles/ProjectChaonia.dir/Player.cpp.i: cmake_force
@@ -211,7 +197,7 @@ CMakeFiles/ProjectChaonia.dir/Player.cpp.s: cmake_force
 CMakeFiles/ProjectChaonia.dir/Game.cpp.obj: CMakeFiles/ProjectChaonia.dir/flags.make
 CMakeFiles/ProjectChaonia.dir/Game.cpp.obj: ../Game.cpp
 CMakeFiles/ProjectChaonia.dir/Game.cpp.obj: CMakeFiles/ProjectChaonia.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\ERAU\Sophomore Year\CS225\CS225-Work\ProjectChaonia\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/ProjectChaonia.dir/Game.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\ERAU\Sophomore Year\CS225\CS225-Work\ProjectChaonia\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ProjectChaonia.dir/Game.cpp.obj"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjectChaonia.dir/Game.cpp.obj -MF CMakeFiles\ProjectChaonia.dir\Game.cpp.obj.d -o CMakeFiles\ProjectChaonia.dir\Game.cpp.obj -c "D:\ERAU\Sophomore Year\CS225\CS225-Work\ProjectChaonia\Game.cpp"
 
 CMakeFiles/ProjectChaonia.dir/Game.cpp.i: cmake_force
@@ -225,7 +211,7 @@ CMakeFiles/ProjectChaonia.dir/Game.cpp.s: cmake_force
 CMakeFiles/ProjectChaonia.dir/Connection.cpp.obj: CMakeFiles/ProjectChaonia.dir/flags.make
 CMakeFiles/ProjectChaonia.dir/Connection.cpp.obj: ../Connection.cpp
 CMakeFiles/ProjectChaonia.dir/Connection.cpp.obj: CMakeFiles/ProjectChaonia.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\ERAU\Sophomore Year\CS225\CS225-Work\ProjectChaonia\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/ProjectChaonia.dir/Connection.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="D:\ERAU\Sophomore Year\CS225\CS225-Work\ProjectChaonia\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/ProjectChaonia.dir/Connection.cpp.obj"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ProjectChaonia.dir/Connection.cpp.obj -MF CMakeFiles\ProjectChaonia.dir\Connection.cpp.obj.d -o CMakeFiles\ProjectChaonia.dir\Connection.cpp.obj -c "D:\ERAU\Sophomore Year\CS225\CS225-Work\ProjectChaonia\Connection.cpp"
 
 CMakeFiles/ProjectChaonia.dir/Connection.cpp.i: cmake_force
@@ -241,7 +227,6 @@ ProjectChaonia_OBJECTS = \
 "CMakeFiles/ProjectChaonia.dir/main.cpp.obj" \
 "CMakeFiles/ProjectChaonia.dir/Character.cpp.obj" \
 "CMakeFiles/ProjectChaonia.dir/Interpreter.cpp.obj" \
-"CMakeFiles/ProjectChaonia.dir/Map.cpp.obj" \
 "CMakeFiles/ProjectChaonia.dir/Object.cpp.obj" \
 "CMakeFiles/ProjectChaonia.dir/Room.cpp.obj" \
 "CMakeFiles/ProjectChaonia.dir/Item.cpp.obj" \
@@ -257,7 +242,6 @@ ProjectChaonia_EXTERNAL_OBJECTS =
 ProjectChaonia.exe: CMakeFiles/ProjectChaonia.dir/main.cpp.obj
 ProjectChaonia.exe: CMakeFiles/ProjectChaonia.dir/Character.cpp.obj
 ProjectChaonia.exe: CMakeFiles/ProjectChaonia.dir/Interpreter.cpp.obj
-ProjectChaonia.exe: CMakeFiles/ProjectChaonia.dir/Map.cpp.obj
 ProjectChaonia.exe: CMakeFiles/ProjectChaonia.dir/Object.cpp.obj
 ProjectChaonia.exe: CMakeFiles/ProjectChaonia.dir/Room.cpp.obj
 ProjectChaonia.exe: CMakeFiles/ProjectChaonia.dir/Item.cpp.obj
@@ -270,7 +254,7 @@ ProjectChaonia.exe: CMakeFiles/ProjectChaonia.dir/build.make
 ProjectChaonia.exe: CMakeFiles/ProjectChaonia.dir/linklibs.rsp
 ProjectChaonia.exe: CMakeFiles/ProjectChaonia.dir/objects1.rsp
 ProjectChaonia.exe: CMakeFiles/ProjectChaonia.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\ERAU\Sophomore Year\CS225\CS225-Work\ProjectChaonia\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable ProjectChaonia.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="D:\ERAU\Sophomore Year\CS225\CS225-Work\ProjectChaonia\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable ProjectChaonia.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\ProjectChaonia.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
