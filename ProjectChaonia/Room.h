@@ -10,6 +10,9 @@
 #include "Object.h"
 #include "Connection.h"
 
+
+// NOTE: Room should never be named "NULL"
+
 class Room : public Object {
 private:
     static Connection wallConnection = new Connection(); // set a static wall connection to prevent *too much* memory hogging
@@ -67,11 +70,24 @@ public:
     void setConnection(Connection& connection, Direction d) { adjacentRooms[d] = connection; }
 
     /**
+     * Returns the connection in direction d
+     * @param d the direction of the connection
+     * @return a reference to the connection in direction d
+     */
+    Connection& getConnection(Direction d) { return adjacentRooms[d]; }
+
+    /**
      * Gets the room in the corresponding direction
      * @param d Direction to delete connection in
-     * @return Reference to room the
+     * @return Reference to room the connection points to
      */
-    Room& getConnectedRoom(Direction d) const {}
+    Room& getConnectedRoom(Direction d) const {
+        try {
+            return adjacentRooms[d].traverse()
+        } catch {
+
+        }
+    }
 
     /**
      * Deletes the connection in the corresponding direction

@@ -9,7 +9,7 @@ void Room::setDirection(Room* adjacentRoom, Direction d) {
     adjacentRooms[d] = new Connection(adjacentRoom);
 }
 
-Room* Room::getDirection(Direction d) {
+Connection& Room::getDirection(Direction d) {
     return adjacentRooms[d];
 }
 

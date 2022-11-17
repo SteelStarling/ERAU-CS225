@@ -35,13 +35,13 @@ public:
      * @param roomTo the room to connect to
      * @param isOpen if the room is open
      */
-    Connection(Room& roomTo, bool* isOpen);
+    Connection(Room* roomTo, bool* isOpen);
 
     /**
      * Creates an open connection
      * @param roomTo the room to connect to
      */
-    Connection(Room& roomTo);
+    Connection(Room* roomTo);
 
     /**
      * Creates a closed connection (room (which does not exist) will be called "NULL")
@@ -52,9 +52,9 @@ public:
      * Traverses through the connection, providing the name of the room the connection links to
      * @return Room the connection links to
      *
-     * Note: Throws "Room Does Not Exist" exception if room is not included in the map
+     * Note: Throws "Room Does Not Exist" exception if room is not included in the map, "isWall" exception if the passage is a wall, and "Passage Closed" exception if passage is not open
      */
-    Room& traverse();
+    Room* traverse();
 
     /**
      * Checks if the connection is open

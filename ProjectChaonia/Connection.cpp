@@ -22,22 +22,16 @@ Connection::Connection() {
     roomToName = "NULL";
 }
 
-Connection::Connection(Room* roomTo, bool* isOpen) {
-    this->isWall = false;
-    this->isOpen = isOpen; // store pointer
-    this->roomToName = (*roomTo).getName();
-}
+Room* Connection::traverse() {
+    if(isWall) {
+        throw "isWall";
+    }
 
-Connection::Connection(Room* roomTo) {
-    this->isWall = false;
-    *(this->isOpen) = true;
-    this->roomToName = roomTo;
-}
-
-Room& Connection::traverse() {
     if(map.find(roomToName) == map.end()) {
         throw "Room Does Not Exist";
     } else {
+        Room* r = map[roomToName];
+        Room*
         return map[roomToName];
     }
 }
